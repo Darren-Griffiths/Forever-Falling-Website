@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+    <link href="css/default.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+</head>
+<body>
+<div id="header-wrapper">
+    <div id="header" class="container">
+        <div id="logo">
+            <img src="images/stickman.png" alt="logo" style="width: 25%; height: 25%";/>
+            <h1><a href="index.html">Forever Falling</a></h1>
+            <span>Developed by <a href="" rel="nofollow">Lorewood Studio</a></span>
+        </div>
+        <div id="triangle-up"></div>
+    </div>
+</div>
+<div id="menu-wrapper">
+    <div id="menu">
+        <ul>
+            <li class="current_page_item"><a href="index.html" accesskey="1" title="">Home</a></li>
+            <li><a href="about.html" accesskey="2" title="">About Us</a></li>
+            <li><a href="game.html" accesskey="3" title="">Game</a></li>
+            <li><a href="documentation.html" accesskey="4" title="">Game Design Document</a></li>
+            <li><a href="contact.html" accesskey="5" title="">Contact Us</a></li>
+        </ul>
+    </div>
+</div>
+<div id="wrapper">
+    <div id="featured-wrapper">
+        <div class="extra2 container">
+            <div class="ebox1">
+                <div class="hexagon"><span class="icon icon-lightbulb"></span></div>
+                <div class="title">
+                    <h2>Game Design Document</h2>
+                    <span class="byline">Forever Falling</span>
+                    <div id="submenu-wrapper>">
+                        <div id="submenu">
+                        <ul>
+                            <li><a class="content-selector" data-id="gameidea" href="" accesskey="7" title="">Game Idea</a></li>
+                            <li><a class="content-selector" data-id="overview" href="" accesskey="8" title="">Game Overview</a></li>
+                            <li><a class="content-selector" data-id="env" href="" accesskey="9" title="">Game Enviroment</a></li>
+                            <br/>
+                            <li><a class="content-selector" data-id="impl" href="" accesskey="10" title="">Implementation</a></li>
+                            <li><a class="content-selector" data-id="insp" href="" accesskey="10" title="">Inspiration</a></li>
+                            <li><a class="content-selector" data-id="market" href="" accesskey="11" title="">Research</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content switchable-content">
+
+                </div>
+                <a href="#" class="button">Play Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="stamp" class="container">
+    <div class="hexagon"><span class="icon icon-wrench"></span></div>
+</div>
+<div id="copyright" class="container">
+    <p>&copy; Forever Falling. All rights reserved. | Developed by <a href="" rel="nofollow">Lorewood Studio</a>.</p>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $('.content-selector').on('click', function(e) {
+        e.preventDefault();
+
+        var contentId = $(this).data('id');
+
+        var content = $('#' + contentId);
+
+        $('.switchable-content').empty();
+        $('.switchable-content').append(content.clone());
+        $('.switchable-content *').show();
+    });
+</script>
+
+
+</body>
+</html>
+
+
+<div id="gameidea" style="display:none;">
+    <div class="content">
+        <p>
+        <h1>Game Idea</h1>
+        <br/>
+        <h2>Title</h2>
+        The title for this web based game is "Forever Falling", we feel this title is justified from the goal of the game.
+        <br/>
+        <br/>
+        <h2>Genre</h2>
+        The genre of this game is classed as "Indie Adventure". <br/>
+        Indie: Is short for independent developer, this is developers that make games without backing of any third-party publisher.<br/>
+        Adventure: Is a genre
+
+        <br/>
+        <h2>Concept</h2>
+        The object of the game is to fall forever without hitting any obstacles<br/>
+        The longer you fall your speed will increase and you will gain points.<br/>
+        There is some power-ups features that can assist your travels along the way.
+        <br/>
+        <br/>
+        </p>
+    </div>
+</div>
+
+<div id="overview" style="display:none;">
+    <div class="content">
+        <p>
+        <h1>Game Overview</h1>
+        <br/>
+        <h2>Core Objective</h2>
+        The goal is to fall as long as possible, tallying up points and avoid hitting any object that will end their fall and the current game.
+        <br/>
+        Players are encouraged to use the abilities within the scene to aid their fall. However, not all abilities will be beneficial and some thought process must come in when the occasion
+        arises.
+        <br/>
+        <br/>
+        <h2>Expected Experience</h2>
+        Players are expected to have fun and feel a sense of laughter from the game.
+        <br/>
+        Players are also to feel a little adrenaline rush from the speed at which the game can be played at.
+        <br/>
+        <br/>
+        <h2>Gameplay Theme</h2>
+        The games base theme is set in the sky with clouds and floating objects that the player must avoid.
+        <br/>
+        <br/>
+        <h2>Game Structure</h2>
+        <br/>
+        <br/>
+        <h2>Features Implemented</h2>
+        In Forever Falling, there is many features that we call in-game abilities to aid your fall.
+        <br/> These abilities can randomly appear on the scene as you fall so there is always a 'new game' experience whenever you play.
+        <br/><strong>Abilities:</strong>
+        <br/>Speed Up - The speed up ability will increase the speed in which the player falls at. This can be a good advantage in the early rounds of the game to obtain points faster.
+        <br/>Speed Down - The speed down ability will decrease the speed in which the player falls at. This can be a good advantage in later stages of the game to give the player time
+        to compose their self.
+        <br/>Double Points - The double points ability will double the players points for a limited amount of time. There is no disadvantages to this ability and we encourage the player
+        to collect these.
+        <br/>Spawn More Objects - The spawn more objects ability will add more objects in the game. This is a disadvantage feature to balance the game, and we strongly advise to avoid this
+        ability. Every one of these collected adds one more spawner to the current game. Resulting in one solid object being spawned as you all on top of the base amount.
+        <br/>
+        </p>
+    </div>
+</div>
+
+<div id="env" style="display:none;">
+    <div class="content">
+        <p>
+            <h1>Game Environment</h1>
+            <h2>GUI</h2>
+            <img src="images/early%20gui.png" alt="logo" style="width: 25%; height: 25%";/>
+            <br/>
+            <h2>Level Design</h2>
+            <img src="images/early%20scene.png" alt="logo" style="width: 25%; height: 25%";/>
+            <br/>
+            <h2>Scene Description</h2>
+            The scene consists of a never ending blue sky, which will have clouds splitting up the blue.
+            These clouds will not be interactable. The scene as you progress down will randomly spawn objects such as barrels and wooden planks that the player
+            will have to avoid in order to progress down the scene and obtain power ups n points. As the player progresses down the scene the ability features will start appear such as;
+            slow down ability, speed up ability, double points ability, spawn more objects ability and bombs.
+            <br/>
+            <br/>
+            <h2>Intended Gameplay Sequence</h2>
+            As the player falls, he or she will have the avoid any collisions with solid objects. If there is any collisions with a solid object the game will end and the player will no longer
+            be falling.<br/>
+            There will be power ups and power downs availible for the falling player to take on board. However, not all of these items are a good thing, there are some bad eggs within that basket.<br>
+            The longer the player falls the faster he or she will become and they will gather a better score.
+
+        </p>
+    </div>
+</div>
+
+<div id="impl" style="display:none;">
+    <div class="content">
+        <p>
+        <h1>Phaser</h1>
+        We developed this game using <strong>Phaser</strong>, "a fast, free and fun open source framework for canvas and WebGL powered browser games.
+        <h1>What is Phaser?</h1>
+        Phaser is an HTML5 game framework which aims to help developers make powerful, cross-browser HTML5 games really quickly and, unlike some others,
+        has solely been built to work with the mobile browsers. The only browser requirement is the support of the canvas tag. It also borrows a lot from Flixel.
+        </p>
+    </div>
+</div>
+
+<div id="market" style="display:none;">
+    <div class="content">
+        <p>
+            <h1>Behind The Idea</h1>
+            There wasn't a lot of research put into the idea of the game, as the idea was there for a while. However, when obtaining facts for this documentation I put research into similar
+            games and competitors. I used Phasers website, the framework behind this game, to research similar games and see how other people implemented their ideas. There wasnt much I found that related
+            to the idea I had, although there were games with similar controls and features like Starstruck & Invaders.
+            <h1>Phaser</h1>
+            The framework behind this game is called <strong>"Phaser"</strong>. Phaser is free for any developer looking to create a web-based game and I encourage you to try it. https://phaser.io/ <br/>
+            Their website is really fun & full of content, there is also a community waiting to share their thoughts and ideas and are willing to help anyone out.
+        </p>
+    </div>
+</div>
+
+<div id="insp" style="display:none;">
+    <div class="content">
+        <p>
+        <h1>Inspiration</h1>
+            There were numerous sources of inspirations when thinking about this 2D web game. However, the main source of this expression came from a dark reality,
+            a time were I felt that I was falling from a high state of mind and seemed to last forever. Wishing there were magical abilities to slow everything down,
+            just a little and  gain a few seconds. Allowing the return of having control of the path ahead.
+            Games like Portal helped me ground my feelings and turn them into an playable expression that I hope people will enjoy when playing "Forever Falling".
+        </p>
+    </div>
+</div>
